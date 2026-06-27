@@ -1,16 +1,15 @@
 
 # 📚 Student Grade Tracker
 
-A modern, feature-rich Flutter application for tracking and managing student grades with cloud-based storage using Firebase Firestore.
+A modern, feature-rich Flutter application for tracking and managing student grades.
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.11+-blue)
 ![Dart](https://img.shields.io/badge/Dart-3.11+-blue)
-![Firebase](https://img.shields.io/badge/Firebase-Latest-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## 🎯 Features
+##  Features
 
 ✅ **Add Subjects** - Easily add new subjects with marks (0-100)  
 ✅ **Grade Calculation** - Automatic grade assignment based on marks
@@ -19,7 +18,7 @@ A modern, feature-rich Flutter application for tracking and managing student gra
 - C: 50-64
 - F: 0-49
 
-✅ **Cloud Storage** - All data synced with Firebase Firestore  
+
 ✅ **Subject Management** - View and delete subjects from your list  
 ✅ **Summary Analytics** - Track overall performance and statistics  
 ✅ **Dark Mode** - Toggle between light and dark themes  
@@ -28,19 +27,18 @@ A modern, feature-rich Flutter application for tracking and managing student gra
 
 ---
 
-## 📦 Prerequisites
+##  Prerequisites
 
 Before you start, ensure you have:
 
 - **Flutter SDK** (3.11.0 or higher)
 - **Dart SDK** (3.11.0 or higher)
-- **Firebase Account** with a Firestore database
 - **Git** for version control
 - **Android Studio/Xcode** for platform-specific setup
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### 1. Clone the Repository
 
@@ -88,7 +86,7 @@ flutter run --release
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 lib/
@@ -109,7 +107,7 @@ lib/
 
 ---
 
-## 🔑 Key Components
+##  Key Components
 
 ### Subject Model
 ```dart
@@ -139,7 +137,7 @@ class Subject {
 
 ---
 
-## 🏗️ Firestore Database Schema
+##  Firestore Database Schema
 
 ### Collection: `subjects`
 
@@ -161,7 +159,7 @@ class Subject {
 2. Enter the subject name (e.g., Mathematics)
 3. Enter marks between 0-100
 4. Click **"ADD SUBJECT"** button
-5. Success message appears and data syncs to Firestore
+5. Succes message 
 
 ### Viewing Subjects
 1. Go to **"Subject List"** tab
@@ -181,51 +179,16 @@ class Subject {
 
 ---
 
-## 📚 Dependencies
+## Dependencies
 
 ```yaml
 flutter: SDK
 provider: ^6.1.5+1           # State management
-firebase_core: ^4.11.0       # Firebase initialization
-firebase_firestore: ^5.0.0   # Cloud database
 cupertino_icons: ^1.0.8      # iOS-style icons
 flutter_lints: ^6.0.0        # Code linting
 ```
 
----
-
-## 🔐 Firebase Setup Steps
-
-### Step 1: Create Firestore Database
-```
-Firebase Console → Create Database → Start in Test Mode
-```
-
-### Step 2: Create Collection
-```
-Collection Name: subjects
-```
-
-### Step 3: Add Security Rules
-```javascript
-rules_version = '2';
-service cloud.firestore {
-  match /databases/{database}/documents {
-    match /subjects/{document=**} {
-      allow read, write: if request.auth != null;
-    }
-  }
-}
-```
-
-### Step 4: Enable Authentication (Optional)
-```
-Firebase Console → Authentication → Enable Email/Password Sign-in
-```
-
----
-
-## 🎨 Theming
+##  Theming
 
 The app includes pre-configured light and dark themes:
 
@@ -243,20 +206,6 @@ Customize themes in `theme/app_theme.dart`
 
 ---
 
-## 🐛 Troubleshooting
-
-### Firebase Connection Issues
-```bash
-# Ensure Firebase is initialized
-flutter clean
-flutter pub get
-flutter run
-```
-
-### Firestore Data Not Syncing
-- Check Firebase credentials in `firebase_options.dart`
-- Verify Firestore rules allow read/write
-- Check internet connection
 
 ### Build Errors
 ```bash
@@ -268,16 +217,15 @@ flutter pub upgrade
 
 ---
 
-## 🚀 Performance Optimization
+##  Performance Optimization
 
 - **Lazy Loading** - Subjects loaded on app start
 - **Efficient State Management** - Provider pattern reduces rebuilds
-- **Cloud Caching** - Firestore handles data caching
 - **Optimized Queries** - Only required fields fetched
 
 ---
 
-## 📝 Code Conventions
+##  Code Conventions
 
 - **Naming** - Dart style guide followed
 - **Comments** - Clear documentation for complex logic
@@ -286,7 +234,7 @@ flutter pub upgrade
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how to contribute:
 
@@ -304,23 +252,22 @@ We welcome contributions! Here's how to contribute:
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Student Grade Tracker**  
 A Flutter learning project showcasing Firebase integration and state management.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Flutter team for the amazing framework
-- Firebase for reliable cloud services
 - Provider package for state management
 - Open-source community for inspiration
 
@@ -331,11 +278,11 @@ A Flutter learning project showcasing Firebase integration and state management.
 For issues, questions, or suggestions:
 - Open an [Issue](../../issues) on GitHub
 - Check existing [Discussions](../../discussions)
-- Email: support@studentgradetracker.com
+- Email: ug2102060@gmail.com
 
 ---
 
-## 📈 Roadmap
+##  Roadmap
 
 - [ ] User authentication with Firebase Auth
 - [ ] Multi-user support
@@ -348,7 +295,7 @@ For issues, questions, or suggestions:
 
 ---
 
-**Made with ❤️ using Flutter**
+**Made with  using Flutter**
 
 Last Updated: June 27, 2024  
 Version: 1.0.0
