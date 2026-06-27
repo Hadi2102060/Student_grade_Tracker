@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "533651138691",
+    "project_id": "studentgrade-dd23e",
+    "storage_bucket": "studentgrade-dd23e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533651138691:android:59b07d606c59c16e7b13b6",
+        "android_client_info": {
+          "package_name": "com.example.student_grade_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533651138691-t88fmsu5ufs4bulr9edpktbb7aac2o1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB52Wc_Lp-PSHXRKs-10M_DKVaKdtjyefs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533651138691-t88fmsu5ufs4bulr9edpktbb7aac2o1e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
