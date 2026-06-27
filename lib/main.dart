@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
       child: Consumer<AppStateProvider>(
         builder: (context, appState, child) {
           return MaterialApp(
+            debugShowCheckedModeBanner: false,
             title: 'Student Grade Tracker',
             theme: appState.isDarkMode ? AppTheme.darkTheme : AppTheme.lightTheme,
             home: const HomeScreen(),
